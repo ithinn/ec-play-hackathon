@@ -1,7 +1,7 @@
 import {Box, Flex} from "reflexbox/styled-components"
 import { useForm } from "react-hook-form" 
 import { usePageContext } from "../../context/PageContext";
-import { Select, SubmitBtn, LabelAsButton, InvisibleCheckbox } from "../StyledComponents/Forms";
+import { Select, SubmitBtn, LabelAsButton, InvisibleInput } from "../StyledComponents/Forms";
 import { 
     PianoSymbol,  
     ViolinSymbol, 
@@ -34,7 +34,12 @@ const ChoiceBox = () => {
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
             <Flex 
-                variant={context.theme} width="100%" flexWrap="wrap" flexDirection="row" alignItems="flex-start" justifyContent="center">
+                variant={context.theme} 
+                width="100%" flexWrap="wrap" 
+                flexDirection="row" 
+                alignItems="flex-start" 
+                justifyContent="center"
+                p={3}>
                 
                 <Box alignSelf="center" m={3} height="100px" width="100px">
                                     {instrument === "guitar" ?
@@ -49,7 +54,7 @@ const ChoiceBox = () => {
                                     }
                 </Box>
 
-                <Box m={3} justifyContent="center" flexDirection="column">
+                <Box m={3} p={3}justifyContent="center" flexDirection="column">
                     
                         <h3>Velg instrument</h3>
                         <Select name="instruments" ref={register}>
@@ -64,40 +69,59 @@ const ChoiceBox = () => {
 
                 <Flex flexWrap="wrap" justifyContent="center">
                                  
-                    <Box m={3}>
+                    <Box m={3} p={3}>
                         <h3>Velg dur/moll</h3>  
-                       
+                        <Flex>
+                            <div>
+                                <InvisibleInput type="radio" value="major" name="minMaj" ref={register} id="major" />
                                 <LabelAsButton htmlFor="major">Dur</LabelAsButton>
-                                <input type="radio" value="major" name="minMaj" ref={register} id="major" />
+                            </div>
+
+                            <div>
+                                <InvisibleInput type="radio" value="minor" name="minMaj" ref={register} id="minor" />
                                 <LabelAsButton htmlFor="minor">Moll</LabelAsButton>
-                                <input type="radio" value="minor" name="minMaj" ref={register} id="minor" />
-              
+                            </div>
+                        </Flex>
                     </Box>
 
-                    <Box m={3}>
+                    <Box m={3} p={3} >
                         <h3>Velg nivå</h3> 
                         
+                        <Flex flexWrap="wrap" maxWidth="10em">
+                        <div>
+                        <InvisibleInput type="radio" value={1} name="levels" ref={register}id="level1" />
                         <LabelAsButton htmlFor="level1">Nivå 1</LabelAsButton>
-                        <input type="radio" value={1} name="levels" ref={register}id="level1" />
-                       
+                        </div>
+
+                        <div>
+                        <InvisibleInput type="radio" value={2} name="levels" ref={register} id="level2" />
                         <LabelAsButton htmlFor="level2">Nivå 2</LabelAsButton>
-                        <input type="radio" value={2} name="levels" ref={register} id="level2" />
-                       
+                        </div>
+
+                        <div>
+                        <InvisibleInput type="radio" value={3} name="levels" ref={register} id="level3" />
                         <LabelAsButton htmlFor="level3">Nivå 3</LabelAsButton>
-                        <input type="radio" value={3} name="levels" ref={register} id="level3" />
-                       
+                        </div>
+
+                        <div>
+                        <InvisibleInput type="radio" value={4} name="levels" ref={register} id="level4" />
                         <LabelAsButton htmlFor="level4">Nivå 4</LabelAsButton>
-                        <input type="radio" value={4} name="levels" ref={register} id="level4" />
-                       
+                        </div>
+
+                        <div>                
+                        <InvisibleInput type="radio" value={5} name="levels" ref={register} id="level5" />
                         <LabelAsButton htmlFor="level5">Nivå 5</LabelAsButton>
-                        <input type="radio" value={5} name="levels" ref={register} id="level5" />
-                       
+                        </div>
+
+                        <div>
+                        <InvisibleInput type="radio" value={6} name="levels" ref={register} id="level6" />
                         <LabelAsButton htmlFor="level6">Nivå 6</LabelAsButton>
-                        <input type="radio" value={6} name="levels" ref={register} id="level6" />
+                        </div>
+                        </Flex>
                     
                     </Box>
 
-                    <Box m={3} alignSelf="center">
+                    <Box m={3} p={3} alignSelf="center">
                         <SubmitBtn>Se video</SubmitBtn>                        
                     </Box>
 

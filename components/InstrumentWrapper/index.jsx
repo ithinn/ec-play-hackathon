@@ -11,7 +11,7 @@ import {
 
 const InstrumentWrapper = ({handleClick}) => {
     return (
-        <Flex width="90%" flexWrap="wrap" justifyContent="center">
+        <Flex width="90%" ml="auto" mr="auto" flexWrap="wrap" justifyContent="center">
             <InstrumentBtn handleClick={handleClick} id="pianoBtn" backgroundColor="#BF5A75">
                 <Box width="100px" height="100px"><PianoSymbol color="white"></PianoSymbol></Box>
                 <ItemTitle clr="white">Piano</ItemTitle>
@@ -24,12 +24,12 @@ const InstrumentWrapper = ({handleClick}) => {
 
             <InstrumentBtn handleClick={handleClick}  id="violinBtn" backgroundColor="#594058">
                 <Box width="100px" height="100px"><ViolinSymbol color="white"/></Box>
-                <ItemTitle clr="white">Violin</ItemTitle>
+                <ItemTitle clr="white">Fiolin</ItemTitle>
             </InstrumentBtn>
 
             <InstrumentBtn handleClick={handleClick}  id="guitarBtn" backgroundColor="#A6498d">
                 <Box width="100px" height="100px"><GuitarSymbol color="white"/></Box>
-                <ItemTitle clr="white">Guitar</ItemTitle>
+                <ItemTitle clr="white">Gitar</ItemTitle>
             </InstrumentBtn>
 
             <InstrumentBtn handleClick={handleClick}  id="ukuleleBtn" backgroundColor="#2a3659">

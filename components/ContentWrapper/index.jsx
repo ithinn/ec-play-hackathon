@@ -19,11 +19,13 @@ const ContentWrapper = () => {
 
             return (
                 <Flex 
-                    as="section" 
-                    p={3}
+                    as="section"
+                    pl={3}
+                    pr={3}
                     alignItems={context.windowSize.width > 600 ? "flex-start" : "center"} 
                     flexDirection="column" 
                     flexWrap="wrap">
+
 
                     <Box>
                         <CatHeading id={cat}>{cat}</CatHeading>

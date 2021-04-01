@@ -2,7 +2,7 @@ export const database = [
     {
         name: "guitar",
         videos: {
-            basics: ["Stemming", "Fingersetting"],
+            intro: ["Stemming", "Fingersetting"],
             chords: [
                 {chord: "D-dur", path: "chords/chord-d", color:"green", levels: ["Nivå 1", "Nivå 2", "Nivå 3", "Nivå 4", "Nivå 5", "Nivå 6"]},
                 {chord: "D-moll", path: "chords/chord-d", color: "green", levels: ["Nivå 1", "Nivå 2", "Nivå 3", "Nivå 4", "Nivå 5", "Nivå 6"]},
@@ -17,14 +17,14 @@ export const database = [
                 {chord: "C#-dur", path: "chords/chord-ciss", color: "orange", levels: ["Nivå 1", "Nivå 2", "Nivå 3", "Nivå 4", "Nivå 5", "Nivå 6"]},
                 {chord: "C#-moll", path: "chords/chord-ciss", color: "orange", levels: ["Nivå 1", "Nivå 2", "Nivå 3", "Nivå 4", "Nivå 5", "Nivå 6"]},
             ],
-            scales: ["Dur", "Pentatonisk", "Blues"],
-            exercises: ["Fingerøvelser", "Rytmeøvelse", "Plekterøvelse"]
+            skalaer: ["Dur", "Pentatonisk", "Blues"],
+            øvelser: ["Fingerøvelser", "Rytmeøvelse", "Plekterøvelse"]
         }
     },
     {
         name: "ukulele",
         videos: {
-            basics: ["Stemming", "Fingersetting"],
+            intro: ["Stemming", "Fingersetting"],
             chords: [
                 {chord: "D-dur", path: "chords/chord-d", color:"green", levels: ["Nivå 1", "Nivå 2", "Nivå 3", "Nivå 4", "Nivå 5", "Nivå 6"]},
                 {chord: "D-moll", path: "chords/chord-d", color: "green", levels: ["Nivå 1", "Nivå 2", "Nivå 3", "Nivå 4", "Nivå 5", "Nivå 6"]},
@@ -39,14 +39,14 @@ export const database = [
                 {chord: "C#-dur", path: "chords/chord-ciss", color: "orange", levels: ["Nivå 1", "Nivå 2", "Nivå 3", "Nivå 4", "Nivå 5", "Nivå 6"]},
                 {chord: "C#-moll", path: "chords/chord-ciss", color: "orange", levels: ["Nivå 1", "Nivå 2", "Nivå 3", "Nivå 4", "Nivå 5", "Nivå 6"]},
             ],
-            scales: ["Dur", "Pentatonisk", "Blues"],
-            exercises: ["Fingerøvelser", "Rytmeøvelse", "Plekterøvelse"]
+            skalaer: ["Dur", "Pentatonisk", "Blues"],
+            øvelser: ["Fingerøvelser", "Rytmeøvelse", "Plekterøvelse"]
         }
     },
     {
         name: "violin",
         videos: {
-            basics: ["Stemming", "Fingersetting"],
+            intro: ["Stemming", "Fingersetting"],
             chords: [
                 {chord: "D-dur", path: "chords/chord-d", color:"green", levels: ["Nivå 1", "Nivå 2", "Nivå 3", "Nivå 4", "Nivå 5", "Nivå 6"]},
                 {chord: "D-moll", path: "chords/chord-d", color: "green", levels: ["Nivå 1", "Nivå 2", "Nivå 3", "Nivå 4", "Nivå 5", "Nivå 6"]},
@@ -61,14 +61,14 @@ export const database = [
                 {chord: "C#-dur", path: "chords/chord-ciss", color: "orange", levels: ["Nivå 1", "Nivå 2", "Nivå 3", "Nivå 4", "Nivå 5", "Nivå 6"]},
                 {chord: "C#-moll", path: "chords/chord-ciss", color: "orange", levels: ["Nivå 1", "Nivå 2", "Nivå 3", "Nivå 4", "Nivå 5", "Nivå 6"]},
             ],
-            scales: ["Dur", "Pentatonisk", "Blues"],
-            exercises: ["Bueøvelse", "Fingerøvelser", "Rytmeøvelse"]
+            skalaer: ["Dur", "Pentatonisk", "Blues"],
+            øvelser: ["Bueøvelse", "Fingerøvelser", "Rytmeøvelse"]
         }
     },
     {
         name: "bass",
         videos: {
-            basics: ["Stemming", "Fingersetting"],
+            intro: ["Stemming", "Fingersetting"],
             chords: [
                 {chord: "D-dur", path: "chords/chord-d", color:"green", levels: ["Nivå 1", "Nivå 2", "Nivå 3", "Nivå 4", "Nivå 5", "Nivå 6"]},
                 {chord: "D-moll", path: "chords/chord-d", color: "green", levels: ["Nivå 1", "Nivå 2", "Nivå 3", "Nivå 4", "Nivå 5", "Nivå 6"]},
@@ -83,14 +83,14 @@ export const database = [
                 {chord: "C#-dur", path: "chords/chord-ciss", color: "orange", levels: ["Nivå 1", "Nivå 2", "Nivå 3", "Nivå 4", "Nivå 5", "Nivå 6"]},
                 {chord: "C#-moll", path: "chords/chord-ciss", color: "orange", levels: ["Nivå 1", "Nivå 2", "Nivå 3", "Nivå 4", "Nivå 5", "Nivå 6"]},
             ],
-            scales: ["Dur", "Pentatonisk", "Blues"],
-            exercises: ["Fingerøvelser", "Rytmeøvelse", "Plekterøvelse"]
+            skalaer: ["Dur", "Pentatonisk", "Blues"],
+            øvelser: ["Fingerøvelser", "Rytmeøvelse", "Plekterøvelse"]
         }
     },
     {
         name: "piano",
         videos: {
-            basics: ["Stemming", "Fingersetting"],
+            intro: ["Stemming", "Fingersetting"],
             chords: [
                 {chord: "D-dur", path: "chords/chord-d", color:"green", levels: ["Nivå 1", "Nivå 2", "Nivå 3", "Nivå 4", "Nivå 5", "Nivå 6"]},
                 {chord: "D-moll", path: "chords/chord-d", color: "green", levels: ["Nivå 1", "Nivå 2", "Nivå 3", "Nivå 4", "Nivå 5", "Nivå 6"]},
@@ -105,8 +105,8 @@ export const database = [
                 {chord: "C#-dur", path: "chords/chord-ciss", color: "orange", levels: ["Nivå 1", "Nivå 2", "Nivå 3", "Nivå 4", "Nivå 5", "Nivå 6"]},
                 {chord: "C#-moll", path: "chords/chord-ciss", color: "orange", levels: ["Nivå 1", "Nivå 2", "Nivå 3", "Nivå 4", "Nivå 5", "Nivå 6"]},
             ],
-            scales: ["Dur", "Pentatonisk", "Blues"],
-            exercises: ["Fingerøvelser", "Rytmeøvelse", "Skalaøvelser"]
+            skalaer: ["Dur", "Pentatonisk", "Blues"],
+            øvelser: ["Fingerøvelser", "Rytmeøvelse", "Skalaøvelser"]
         }
     },
 ]

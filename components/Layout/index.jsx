@@ -14,7 +14,7 @@ function Layout( {
             </Head>
     
             {home ? 
-                <Header heading="Instrumentopplæring" isChordBtn={true}/>
+                <Header heading="Instrument" isChordBtn={true}/>
             : 
             piano ?
                 <Header 

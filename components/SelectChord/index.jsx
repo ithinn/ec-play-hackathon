@@ -18,7 +18,6 @@ const SelectChord = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
         <Box>
         <Select name="chords" ref={register}>
-            <option value="">Akkord</option>
             <option value="chord-a">A-dur</option>
             <option value="chord-a">A-moll</option>
             <option value="chord-d">D-dur</option>

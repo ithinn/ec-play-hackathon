@@ -44,13 +44,13 @@ export const Select = styled.select`
 
 export const LabelAsButton = styled.label`
     font-size: 1rem;
-    color: ${props => props.theme.colors.bckGr};
-    border: 1px solid black;
-    padding: ${props => props.theme.space[3]};
-    margin: ${props => props.theme.space[1]};
+    color: white;
+    border: 2px solid white;
+    padding: ${props => props.theme.space[2]};
+    margin-bottom: 5em;
     
    &:hover {
-       
+        box-shadow: ${props => props.theme.shadows.hover};
         color: black;
     }
 
@@ -62,14 +62,16 @@ export const LabelAsButton = styled.label`
 `
 
 
-export const InvisibleCheckbox = styled.input`
+export const InvisibleInput = styled.input`
     width: .1px;
     height: .1px;
     margin-bottom: 2em;
+ 
     
     &:checked ~ label {
-        background-color: ${props => props.theme.colors.green};
-        color: white;
+        background-color: white;
+        color: black;
+        box-shadow: ${props => props.theme.shadows.hover};
     }  
 `
 
